@@ -1,0 +1,104 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e29; /* Blackish background */
+    padding: 10px 20px;
+    position: relative; /* Make sure elements are relative for positioning */
+    border-bottom: 2px solid transparent; /* Transparent border for smooth effect */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links ul {
+    display: flex; /* Default to horizontal layout */
+    gap: 20px; /* Spacing between links */
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white; /* White text */
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a.active {
+    background-color: #575757; /* Active link color */
+}
+
+.nav-links a:hover {
+    background-color: #333; /* Darker hover effect */
+}
+
+.github {
+    margin-left: auto; /* Push GitHub button to the right */
+}
+
+.github button {
+    background-color: #007bff; /* Blue background for the button */
+    color: white; /* White text on button */
+    border: none; /* No border */
+    border-radius: 20px; /* Rounded border */
+    padding: 10px 20px; /* Padding for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.github button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .nav-links ul {
+        flex-direction: column; /* Stack links vertically on small screens */
+        display: none; /* Hide by default */
+        width: 100%; /* Full width */
+        background-color: #1c1c1c; /* Match navbar background */
+        position: absolute; /* Position it absolutely */
+        top: 30px; /* Align below the navbar */
+        right: 0; /* Align to the left */
+        z-index: 999; /* Ensure it’s on top */
+    }
+
+    .nav-links.active ul {
+        display: flex; /* Show links when active */
+    }
+
+    .menu-toggle {
+        display: inline-block; /* Visible on mobile */
+        background: none; /* Remove background */
+        border: none; /* Remove border */
+        color: white; /* White color */
+        font-size: 24px; /* Font size for the hamburger icon */
+        cursor: pointer; /* Pointer cursor */
+        margin-left: auto; /* Align to the right */
+       
+    }
+
+    /* Adjust button margins */
+    .github {
+        margin: 10px 0; /* Margin for the button on small screens */
+    }
+}
+
+/* Hide menu toggle on larger screens */
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none; /* Hide on larger screens */
+    }
+}

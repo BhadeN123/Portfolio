@@ -1,0 +1,112 @@
+.experience {
+    padding: 40px 20px;
+    background-color:rgb(20, 20, 29);
+    color:gray
+  }
+  
+  .experience h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .experience-container {
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .experience-item {
+    display: flex;
+    margin-bottom: 40px; /* Space between each experience */
+    position: relative;
+  }
+  
+  .connector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: -40px; /* Position the connector circle and line */
+  }
+  
+  .circle {
+    width: 12px;
+    height: 12px;
+    background-color: #4caf50; /* Circle color */
+    border-radius: 50%;
+    z-index: 1; /* Bring to front */
+  }
+  
+  .line {
+    width: 2px; /* Line width */
+    height: 40px; /* Length of the connecting line */
+    background-color: #4caf50; /* Line color */
+  }
+  
+  .top-circle {
+    margin-top: 0; /* Remove margin for the top circle */
+  }
+  
+  .experience-card {
+    /* display: flex; */
+    background:#1b1b20; /* Card background */
+    border: 1px solid #ddd; /* Card border */
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%; /* Full width for card */
+    max-width: 800px; /* Max width for the card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .company-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+    
+
+    /* justify-content: space-around;
+    align-items: space-between; */
+    margin-right:40px;
+    /* width: 30%; Set a fixed width for company info */
+  }
+  
+  .company-logo {
+    width: 50px; /* Logo size */
+    height: 50px;
+    border-radius: 50% ; /* Make logo circular */
+    margin-right: 15px; /* Space between logo and text */
+  }
+  
+ 
+  
+  .duration {
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  .duration
+ {
+  margin-top: 0px;
+  padding: 0px;
+ }
+ p.company-name ,p.designation
+ {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 0px;
+  color: white;
+ }
+  
+  .description ul {
+    
+    color:rgb(121, 124, 121);
+    list-style-type: disc; /* Bullet point style */
+  }
+  
+  .description li {
+    margin-bottom: 5px; /* Space between list items */
+  }

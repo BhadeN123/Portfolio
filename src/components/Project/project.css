@@ -1,0 +1,75 @@
+.project-tabs {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(20, 20, 29);
+}
+
+.tabs {
+    margin: 20px 0;
+}
+.projectlink {
+    padding-top:20px;
+    color:white;
+}
+.projectlink a {
+    color:white;
+}
+
+.tabs button ,button{
+    margin: 0 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+}
+
+.tabs button.active {
+    background-color: #007bff;
+    color: white;
+}
+.project-title,h2
+{
+    color:white;
+}
+
+.tabs button:hover ,button:hover{
+    background-color: #007bff; /* Change background on hover */
+    color: white;
+}
+
+.project-description
+{
+    color:gray
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the items */
+    gap: 20px; /* Space between cards */
+}
+
+.project-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: 300px; /* Fixed width for the cards */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.project-image {
+    width: 100%;
+    height:500px;
+    
+    height: auto;
+    border-radius: 5px 5px 0 0; /* Rounded corners for the top */
+}

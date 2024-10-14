@@ -1,0 +1,151 @@
+.education {
+    padding: 40px 20px;
+    background-color:rgb(20, 20, 29);
+    color: grey;
+  }
+  
+  .education h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color:white;
+  }
+  
+  .education-container {
+ 
+    margin-left:400px ;
+   
+  
+  }
+  .education-card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  .education-item {
+    padding-bottom: 20px;
+    opacity: 1; /* Start hidden for animation */
+  animation: fadeIn 0.5s forwards; /* Apply fade-in animation */
+  transform: translateY(20px); /* Start slightly lower */
+  animation-delay: calc(0.1s * var(--delay)); /* Delay for each card */
+    
+  }
+  
+  .connector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: -40px; /* Position the connector circle and line */
+  }
+  
+  .circle {
+    width: 12px;
+    height: 12px;
+    background-color: #4caf50; /* Circle color */
+    border-radius: 50%;
+    z-index: 1; /* Bring to front */
+  }
+  
+  .line {
+    width: 2px; /* Line width */
+    height: 40px; /* Length of the connecting line */
+    background-color: #4caf50; /* Line color */
+  }
+  
+  .top-circle {
+    margin-top: 0; /* Remove margin for the top circle */
+  }
+  
+  .education-card {
+    background: #1b1b20; /* Card background */
+    border: 1px solid #ddd; /* Card border */
+    border-radius: 8px;
+    padding: 20px;
+    
+    width: 100%; /* Full width for card */
+    max-width: 600px; /* Max width for the card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .institution-info {
+    display: flex;
+    justify-content: flex-start; 
+  
+  }
+  .intitute-name
+  {
+    font-size: 16px;
+    color: white;
+  }
+
+  .degree,.duration,.intitute-name
+ {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-right:0px;
+  padding: 0px;
+ }
+  
+  .institution-logo {
+    width: 50px; /* Logo size */
+    height: 50px;
+    border-radius: 50%; /* Make logo circular */
+    margin-right: 15px; /* Space between logo and text */
+  }
+  .institution-details
+  {
+    padding-left: 0px;
+  
+     width: 90%;
+  }
+  
+  
+ 
+  
+  .duration {
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  
+  
+  .achievements ul {
+    padding-left: 20px; /* Indent for bullet points */
+    list-style-type: disc; /* Bullet point style */
+  }
+  
+  .achievements li {
+    margin-bottom: 5px; /* Space between list items */
+  }
+
+  .connector {
+    position: relative;
+    width: 20px; /* Set width for the connector section */
+  }
+  
+  .line {
+    position: absolute;
+    top: 20px; /* Position line below the top */
+    left: 9px; /* Center the line horizontal */
+    height: 150px; /* Connect length (can be adjusted) */
+    border-left: 2px solid #007bff; /* Line color */
+  }
+  
+  .dot {
+    width: 12px; /* Dot size */
+    height: 12px; /* Dot size */
+    background-color: #007bff; /* Dot color */
+    border-radius: 50%; /* Make the dot round */
+    position: absolute;
+    top: 0; /* Position dot at the top */
+    left: 6px; /* Center the dot */
+  }
+
+
+  @media (max-width: 950px) {
+    .education-container {
+    margin-left: 40px;
+    
+    }
+}

@@ -1,0 +1,95 @@
+.About {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Align items in a row */
+    justify-content: space-between; /* Space between left and right containers */
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* Some padding for spacing */
+   
+    margin: 0 auto; /* Center the content */
+    background-color: rgb(20, 20, 29); /* Blackish background */
+    color: white; 
+}
+
+/* Fade-In Animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards; /* Fade-in effect */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.leftContainer {
+    flex: 1; /* Take up remaining space */
+    padding: 20px; /* Padding for the left container */
+}
+
+.leftContainer h1 {
+    font-size: 2.5rem; /* Example font size for the header */
+    margin-bottom: 10px; /* Spacing below the header */
+}
+
+.leftContainer h3 {
+    font-size: 1.5rem; /* Font size for the subheader */
+    margin-bottom: 20px; /* Spacing below the subheader */
+    
+}
+
+.leftContainer h4 {
+    margin-bottom: 20px; /* Add some spacing, if needed */
+    color:rgb(121, 124, 121);
+}
+
+.leftContainer button {
+    padding: 10px 20px; /* Padding for button */
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size for button */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth background transition */
+}
+
+.leftContainer button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly scale button on hover */
+}
+
+.rightContainer {
+    flex: 1; /* Take up remaining space */
+    display: flex; /* Use flexbox for image alignment */
+    justify-content: center; /* Center the image */
+    align-items: center; /* Center vertically */
+}
+
+.rightContainer img {
+    max-width: 800px; /* Responsive image */
+    height: 300px; /* Maintain aspect ratio */
+    border-radius: 50%;
+    transition: transform 0.3s; /* Image scale transition */
+}
+
+.rightContainer img:hover {
+    transform: scale(1.05); /* Slightly scale the image on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .About {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .leftContainer {
+        text-align: center; /* Center text on small screens */
+        margin-bottom: 20px; /* Space below left container */
+    }
+
+    .rightContainer {
+        width: 100%; /* Make right container full width */
+    }
+}

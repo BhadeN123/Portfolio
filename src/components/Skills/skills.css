@@ -1,0 +1,65 @@
+.skills {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgb(20, 20, 29); /* Dark background for the skill section */
+}
+
+.skills h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-card {
+    background-color: rgb(255, 254, 254); /* Card background */
+    border: 1px solid #ddd; /* Card border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    margin: 10px;
+    width: 150px; /* Fixed width for cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    flex: 1 1 120px; /* Makes it flexible and responsive */
+    max-width: 150px; /* Prevents cards from growing too large */
+}
+
+/* Hover effect */
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-card img {
+    width: 50px; /* Size of the technology icon */
+    height: 50px; /* Ensure the icon is square */
+    margin-bottom: 10px;
+}
+
+.skill-card h3 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .skill-card {
+        width: 100%; /* Full width on small screens */
+        max-width: none; /* Remove max width restriction */
+        flex: 1 1 45%; /* Two cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .skills h2 {
+        font-size: 1.6em; /* Smaller header font size */
+    }
+
+    .skill-card {
+        flex: 1 1 90%; /* One card per row on small phones */
+        margin: 5px; /* Less margin */
+    }
+}
